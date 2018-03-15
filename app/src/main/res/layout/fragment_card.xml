@@ -1,0 +1,180 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout_CardFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.addy1397.blinkcards.CardFragment">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout_cardFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/image_blinkCard"
+            android:layout_width="0dp"
+            android:layout_height="242dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/background_1" />
+
+        <ImageView
+            android:id="@+id/imageView_line"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:src="@android:color/background_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_blinkCard" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_cardFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_dark"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageView
+                    android:id="@+id/imageView_toolbar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:rotation="90"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_dehaze_black_24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:text="BLINLCARDS"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/imageView_toolbar_search"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_search_black_24dp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+            <!-- <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout_toolbar_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="5dp">
+
+                <TextView
+                    android:id="@+id/toolbar_textView_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/averia_libre_light"
+                    android:text="BLINK CARD"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/toolbar_cardFragment"
+                    tools:ignore="NotSibling" />
+
+                <ImageView
+                    android:id="@+id/CardFragment_ImageView_Toolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:rotation="90"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/toolbar_textView_Title"
+                    app:srcCompat="@drawable/ic_dehaze_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/CardFragment_ImageView_Search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/toolbar_textView_Title"
+                    app:srcCompat="@drawable/ic_search_black_24dp" />
+
+            </android.support.constraint.ConstraintLayout> -->
+
+        <ImageView
+            android:id="@+id/imageView_subject"
+            android:layout_width="144dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="182dp"
+            android:src="@drawable/img_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/averia_libre_light"
+            android:text="HISTORY"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView_subject"
+            app:layout_constraintStart_toStartOf="@+id/imageView_subject"
+            app:layout_constraintTop_toTopOf="@+id/imageView_subject" />
+
+        <TextView
+            android:id="@+id/textView_TEXT"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/randon_string"
+            android:maxLines="13"
+            android:scrollbars="vertical"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_Topic" />
+
+        <TextView
+            android:id="@+id/textView_Topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="TOPIC"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_line" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
